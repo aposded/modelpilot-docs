@@ -1,0 +1,72 @@
+# GitHub Pages Configuration for ModelPilot Documentation
+
+# Site settings
+title: ModelPilot Documentation
+description: Intelligent AI routing platform with OpenAI-compatible API
+url: 'https://modelpilot.github.io'
+baseurl: '/modelpilot-docs'
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Navigation
+header_pages:
+  - getting-started.md
+  - npm-package.md
+  - router-configuration.md
+  - backend-architecture.md
+  - api-reference.md
+  - examples/README.md
+
+# Collections
+collections:
+  examples:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ''
+      type: 'pages'
+    values:
+      layout: 'page'
+  - scope:
+      path: ''
+      type: 'examples'
+    values:
+      layout: 'page'
+
+# Exclude files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - gemfiles
+  - README.md
+
+# # SEO
+# author: ModelPilot Team
+# twitter:
+#   username: modelpilot
+#   card: summary_large_image
+
+# Social links
+github_username: aposded
+
+# Custom variables
+modelpilot:
+  api_url: https://modelpilot.co/api
+  dashboard_url: https://modelpilot.co
+  npm_package: modelpilot
