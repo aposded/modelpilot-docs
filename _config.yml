@@ -3,7 +3,7 @@
 # Site settings
 title: ModelPilot Documentation
 description: Intelligent AI routing platform with OpenAI-compatible API
-url: 'https://modelpilot.github.io'
+url: 'https://aposded.github.io'
 baseurl: '/modelpilot-docs'
 
 # Build settings
